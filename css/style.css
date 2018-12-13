@@ -1,0 +1,37 @@
+body{
+	background-color: steelblue;
+}
+.inch-box{
+	width: 300px;
+}
+
+.centimeter-box{
+	margin-top: 10%;
+	width: 300px;
+}
+
+.centimeter-result{
+	text-align: center;
+	background-color: tomato;
+	margin: 0px;
+	font-weight: bold;
+
+}
+.inch-result{
+	text-align: center;
+	background-color: tomato;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.modal-title{
+	text-align: center;
+}
+
+.header{
+	color: black;
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	margin-bottom: 10%;
+}

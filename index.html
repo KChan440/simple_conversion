@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+
+
+<body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+
+    <div class="header">Kumaran's Magical Converter</div>
+
+    <div class="inch-box mx-auto modal-content">
+        <h5 class="modal-title" >Inches to Centimeters</h5>
+        <form class="modal-body" onsubmit="getCentimeters(document.getElementById('inches').value)">
+            <div class="form-group">
+        	   <input id="inches" class="form-control" type="text" placeholder="Enter # of inches"/>   
+            </div>
+            <input class="btn btn-primary" value="Convert" type="submit">
+        </form>
+        <p class="centimeter-result"></p>
+    </div>
+ 
+    <div class="centimeter-box mx-auto modal-content">
+        <h5 class="modal-title">Centimeters to Inches</h5>
+        <form class="modal-body" onsubmit="getInches(document.getElementById('centimeters').value)">
+            <div class="form-group">
+                <input id="centimeters" class="form-control" type="text" placeholder="Enter # of centimeters"/>
+            </div>
+            <input class="btn btn-primary" value="Convert" type="submit">
+        </form>
+
+        <p class="inch-result"></p>
+    </div>
+</body>
+
+
+
